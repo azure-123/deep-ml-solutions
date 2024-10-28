@@ -1,6 +1,6 @@
 import math
 
-def single_neuron_model(features: list[list[float]], labels: list[int], weights: list[float], bias: float) -> (list[float], float):
+def single_neuron_model(features: list[list[float]], labels: list[int], weights: list[float], bias: float) -> (list[float], float): # type: ignore
 	# Your code here
 	neuron_output = []
 	for feature in features:
