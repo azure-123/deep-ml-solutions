@@ -3,7 +3,7 @@ def sigmoid(input: np.ndarray):
     output = np.array([1 / (1 + np.exp(-element)) for element in input])
     return output
 
-def train_neuron(features: np.ndarray, labels: np.ndarray, initial_weights: np.ndarray, initial_bias: float, learning_rate: float, epochs: int) -> (np.ndarray, float, list[float]): # type: ignore
+def train_neuron(features: np.ndarray, labels: np.ndarray, initial_weights: np.ndarray, initial_bias: float, learning_rate: float, epochs: int):
     features = np.array(features)
     labels = np.array(labels)
     initial_weights = np.array(initial_weights)
